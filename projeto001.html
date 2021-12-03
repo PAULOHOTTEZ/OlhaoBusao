@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal HTML</title>
+
+    <link rel="preload" href="style001.css">
+    <link rel="stylesheet" href="style001.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>                        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="content">
+        <div class="titulo2"><h1><b><p>OLHA O BUSÃO </p></b></h1></div>
+       
+        <div>
+        <img src="onibus.jpg"  class="teste" alt="" width=300 height=140p>
+        <b>____SUA MARCA AQUI!____</b>
+        <img src="logo_sinop.jpg"  class="teste" alt="" width=300 height=150p></p>
+        </div>
+        <h2><p>LINHAS DISPONIVEIS !</p></h2>
+        <button class="btn" onclick="openModal1('dv-modal', 'saida terminal <p> gente feliz 10:30')">Daury riva</button>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal=07:30-10:00-11:40-13:00-15:40-16:30-17:15-18:15-19:30<p>saida bairro=05:30-07:00-08:10-10:50-12:10-13:40-16:10-17:10-17:55-18:45-20:00')">Boa vista</button>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal=06:50-08:00-09:50-13:30-18:10-18:45-:19:50<p>saida bairro=05:30-06:40-07:10-07:50-12:25-14:35-15:20-16:40')">Maria vindilina</button></p>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal=11:40-13:40-18:20<p>saida bairro=07:05-13:00-15:10')">Gente feliz</button>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal=05:50-06:45-09:15-10:20-11:40-13:40-15:45-17:00-18:20<p>saida bairro=06:00-06:45-07:40-10:05-11:10-12:30-14:30-17:00-17:50-19:00')">Camping club</button>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal= 06:40-11:00-16:10 <p>saida bairro= 07:00-11:30-16:30')">Chacaras sao cristovão</button></p>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal=06:45-11:00<p>saida bairro=11:10-14:35-16:35')">Fasip,unic aeroporto</button>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal=05:20-06:20-11:40-15:00-17:00<p>saida bairro=05:55-06:40-12:00-15:20-17:20')">Bom jardim</button>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal=06:50-07:30-09:20-11:00-11:50-12:40-13:40-15:00-16:10-17:05-18:10-18:45-19:10<p>saida bairro=04:30-05:00-05:30-06:00-07:15-08:00-10:10-11:30-12:40-13:35-14:30-16:35-17:35')">Boa esperança</button></p>
+        <button class="btn" onclick="openModal1('dv-modal','saida terminal=04:45-05:15-05:50-06:20-07:00-08:10-08:50-09:50-10:25-11:30-12:10-13:00-14:10-15:00-15:40-16:10-17:10-18:15-19:30-21:30<p>saida bairro=05:15-06:00-06:35-07:05-07:45-08:55-09:30-10:35-11:20-12:25-12:55-13:45-14:55-15:45-16:30-17:10-18:05-20:20-22:20')">Alto da gloria</button></p>
+        <button class="btn2" onclick="openModal1('dv-modal','tel:(66)99607-9880 <p>email: paulorobertohottezsilveira@hotmail.com')">Fale conosco</button></p>
+            
+        </p>
+       
+    </div>
+
+    <div id="dv-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>linhas</h1>
+            </div>
+
+            <div class="modal-body">
+                <p id="info">
+
+                </p>
+
+                    
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal1('dv-modal')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

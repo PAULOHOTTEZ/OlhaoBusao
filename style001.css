@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    text-align: justify;
+    
+}
+
+.titulo2
+{
+    text-indent: 30%;
+    text-shadow: 2px 2px 5px green;
+}
+.teste
+{
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    color: #FFF;
+}
+.content {
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.btn {
+    width: 250px;
+    height: 45px;
+    background-color: rgb(33, 156, 70);
+    padding: 5px 10px 5px 10px;
+    border: px solid rgb(4, 92, 30);
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.btn:hover {
+    background-color: rgb(4, 92, 30);
+}
+
+.btn:active {
+    background-color: rgb(129, 255, 166);
+    color: rgb(4, 92, 30);
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.modal-content {
+    margin: 0 auto;
+    margin-top: 15%;
+    max-width: 500px;
+    background-color: #eee;
+    padding: 0;
+    box-shadow: 0 0 2px #fff;
+}
+
+.modal-header h1{
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    padding: 10px;
+}
+
+.modal-header{
+    background-color: #ccc;
+}
+
+.modal-footer{
+    background-color: #ccc;
+}
+
+.btn2 
+{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(166, 214, 181);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid rgb(54, 90, 65);
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    color: rgb(12, 12, 12);
+}
+
+.btn2:hover {
+    background-color: rgb(40, 71, 49);
+}
+
+.btn2:active {
+    background-color: rgb(129, 255, 166);
+    color: rgb(22, 36, 26);
+}
